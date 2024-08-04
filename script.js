@@ -47,8 +47,7 @@ function updateDOM(data) {
 
 async function fetchWeather(location) {
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=4f00639c2db9450dab713942240408&q=${location}
-    &aqi=yes`;
+    const url = `http://api.weatherapi.com/v1/current.json?key=4f00639c2db9450dab713942240408&q=${location}&aqi=no`;
     // fetch -> inbuilt function to get http response from a server
     const response = await fetch(url);
     if (response.status == 400) {
